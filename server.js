@@ -1,7 +1,7 @@
 require("dotenv").config({ path: __dirname + "/.env" }); // Load environment variables
 const express = require("express");
 const app = express();
-const port = 3001;
+const port = process.env.PORT;
 const nodemailer = require("nodemailer");
 
 // ========================
