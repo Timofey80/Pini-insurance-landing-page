@@ -40,6 +40,8 @@ app.post("/mail", (req, res, next) => {
       pass: process.env.PASSWORD,
     },
   });
+	console.log(process.env.EMAIL);
+  console.log(process.env.PASSWORD);
 
   const mailOptions = {
     from: process.env.EMAIL,
@@ -53,22 +55,23 @@ app.post("/mail", (req, res, next) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
+	    console.log(error);
       return res.send({
         error: { phone: false, name: false, email: true },
         message: "error occurred while sending email ",
       });
     } else {
-      console.log("Email sent: " + info.response);
+    
+	    console.log("Email sent: " + info.response);
+   	return res.send({ error: false, message: "email sent" });
     }
   });
-  return res.send({ error: false, message: "email sent" });
 });
 
 // 404 handler
 app.use(function (req, res) {
   res.sendFile("./public/404.html", { root: __dirname });
 });
-
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
