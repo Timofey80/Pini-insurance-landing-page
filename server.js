@@ -12,6 +12,11 @@ app.use(express.static("public"));
 app.use(express.json()); // this will parse Content-Type: application/jsons
 app.use(express.urlencoded({ extended: true })); // this will parse Content-Type:  application/x-www.js-form-urlencoded
 
+
+  // TRUST PROXY IN PRODUCTION
+  app.set("trust proxy", 1);
+
+
 app.post("/mail", (req, res, next) => {
   const { name, phone } = req.body;
 
