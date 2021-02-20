@@ -1009,6 +1009,12 @@ input[type="checkbox"] {
   text-align: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .cards-1 h4 {
+    line-height: 2.3rem;
+  }
+}
+
 .cards-1 .card {
   margin-bottom: 2.5rem;
   border: none;
@@ -1148,6 +1154,13 @@ input[type="checkbox"] {
   height: 27rem;
   background: url("../images/details-1-background.jpg") center center no-repeat;
   background-size: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .accordion .area-1 {
+    border-radius: 15px;
+  }
 }
 
 .accordion {
