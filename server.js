@@ -46,7 +46,7 @@ app.post("/mail", async (req, res, next) => {
   SendGrid.setApiKey(process.env.SENDGRID_API_KEY);
 
   const msg = {
-    to: "timofey.official.1@gmail.com",
+    to: "shira@pinir.co.il",
     from: process.env.EMAIL,
     subject: "website contact",
     html: `<p> שם:${name} </p>
