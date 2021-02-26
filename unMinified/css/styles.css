@@ -1622,6 +1622,12 @@ input[type="checkbox"] {
   left: 0;
   color: #fff;
   font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+  animation: wiggle 5s infinite;
+  text-decoration: none;
+  /* animation: fullRotation 1s infinite; */
+
+  
+  
 }
 
 /**********************************/
@@ -2825,6 +2831,16 @@ a:hover.back-to-top {
   font-size: 2.5rem;
   font-family: "Cousine", monospace;
   font-family: "Varela Round", sans-serif;
+  margin-top: -3rem;
+}
+
+.our-ins-img {
+  margin-top: -1rem;
+}
+
+.analysis-and-adjustment-header {
+  font-size: 2rem;
+  margin-top: -5rem;
 }
 
 .accordion-numbers {
@@ -2848,3 +2864,55 @@ a:hover.back-to-top {
     }      
         
 }
+
+.btn--wiggle.is-active {
+  -webkit-animation: 1s wiggle ease infinite;
+          animation: 1s wiggle ease infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+  }
+}
+
