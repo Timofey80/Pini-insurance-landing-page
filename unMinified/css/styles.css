@@ -34,13 +34,6 @@ p {
   }
 }
 
-/* @media only screen and (min-width: 56.25em) {
-  #the-first-header {
-    font-size: 1.3rem;
-    line-height: 35px; 
-  }
-} */
-
 .p-small {
   font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
   text-align: center;
@@ -807,7 +800,7 @@ input[type="checkbox"] {
 /*********************/
 
 .header {
-	background: linear-gradient(rgba(141, 141, 141, 0.3), rgba(92, 92, 92, 0.5)), url('../images/poles-1030747_1920.jpg') center center no-repeat;
+	background: linear-gradient(rgba(141, 141, 141, 0.3), rgba(92, 92, 92, 0.5)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -2563,7 +2556,7 @@ a:hover.back-to-top {
   width: 60px;
   height: 60px;
   bottom: 115px;
-  right: 45px;
+  right: 40px;
 
   /* background-color:#25d366; */
   color: #fff;
