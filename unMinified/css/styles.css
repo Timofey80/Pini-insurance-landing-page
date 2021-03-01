@@ -2713,13 +2713,19 @@ a:hover.back-to-top {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .our-Insurance-header{
-    font-size: 1.8rem;
+  .our-Insurance-header {
+    font-size: 1.6rem;
   }
 }
 
 .our-ins-img {
   margin-top: -1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .our-ins-img {
+    margin-top: -1.2rem;
+  }
 }
 
 .analysis-and-adjustment-header {
